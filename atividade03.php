@@ -12,13 +12,13 @@ $idade = -12;
 echo ("Idade: " . $idade . "<br>");
 
 if ($idade >= 0 && $idade <= 12) {
-    echo ("Filme infantil.");
+    echo ("Classificação: Filme infantil.");
 } elseif ($idade >= 12 && $idade <= 18) {
-    echo ("Filme para adolescente");
-} elseif ($idade >= 18) {
-    echo ("Filme para adultos");
+    echo ("Classificação: Filme para adolescente");
+} elseif ($idade >= 18 && $idade <= 120) {
+    echo ("Classificação: Filme para adultos");
 } else {
-    echo ("Opção inválida.");
+    echo ("Classificação: Opção inválida.");
 }
 
 ?>
