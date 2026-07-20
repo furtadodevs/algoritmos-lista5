@@ -35,5 +35,24 @@
     echo ("Não tem prioridade");
  }
 
+ echo("<br>" . str_repeat("--", 30). "<br>");
+
+ // Exemplo operador NOT (!)
+ // Inverte o valor : Se true, vira false. Ou ao contrário.
+ $logado = rand(0,1);
+
+ echo ("<br> Logado: " . $logado . "<br>");
+
+ if(!$logado) {
+    echo ("Faça login.");
+ }
+
+ echo("<br>" . str_repeat("--", 30). "<br>");
+
+// Operador ternário
+
+$total = rand(0, 20);
+$resultado = $total >= 10 ? "Aprovado" : "Reprovado";
+echo("Resultado: " . $resultado);
 
  ?>
